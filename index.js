@@ -1,11 +1,17 @@
 // bring express into the file
 const express = require('express');
 
+// bring cors into the file
+const cors = require('cors');
+
 // create an instance of express
 const app = express();
 
 // parse the body of your request
 app.use(express.json());
+
+// enable cors
+app.use(cors());
 
 // define a port value
 const PORT = 8080;
