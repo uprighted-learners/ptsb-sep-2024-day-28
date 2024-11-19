@@ -8,8 +8,8 @@ const app = express();
 const PORT = 8080;
 
 // define a "HELLO WORLD" route
-app.get("/", (request, response) => {
-    response.send("Hello World");
+app.get("/hello-world", (request, response) => {
+    response.send("Hello World - I am alive!");
 })
 
 // launch  the server
