@@ -35,6 +35,9 @@ const users = [
     }
 ]
 
+// serve our static files
+app.use(express.static("public"));
+
 // GET - /api/users - get all users
 app.get("/api/users", (req, res) => {
     res.json(users)
